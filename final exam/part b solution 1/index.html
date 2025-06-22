@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ✅ Link Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- ✅ Link Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- ✅ Bootstrap JS for mobile dropdown -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <!-- ✅ NAVBAR -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle visible-xs" data-toggle="collapse" data-target="#menuItems">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+        </button>
+        <a class="navbar-brand" href="#">Food, LLC</a>
+      </div>
+      <div class="collapse navbar-collapse visible-xs" id="menuItems">
+        <ul class="nav navbar-nav">
+          <li><a href="#chicken">Chicken</a></li>
+          <li><a href="#beef">Beef</a></li>
+          <li><a href="#sushi">Sushi</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ✅ HEADING -->
+  <div class="text-center">
+    <h1 id="menu-title">Our Menu</h1>
+  </div>
+
+  <!-- ✅ MENU SECTIONS -->
+  <div id="chicken" class="menu-section chicken">
+    <h2>Chicken Menu</h2>
+    <p>Delicious chicken dishes with rich spices and flavors. Choose from our variety of grilled, fried, and curried options.</p>
+    <a href="#menu-title">Back to Top</a>
+  </div>
+
+  <div id="beef" class="menu-section beef">
+    <h2>Beef Menu</h2>
+    <p>Juicy steaks, stir-fried beef, and slow-cooked meals. All cooked to perfection with herbs and sauces.</p>
+    <a href="#menu-title">Back to Top</a>
+  </div>
+
+  <div id="sushi" class="menu-section sushi">
+    <h2>Sushi Menu</h2>
+    <p>Fresh sushi rolls, sashimi, and Japanese delights prepared using traditional methods and fresh ingredients.</p>
+    <a href="#menu-title">Back to Top</a>
+  </div>
+
+</body>
+</html>
